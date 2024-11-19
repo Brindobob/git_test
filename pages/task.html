@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="../styles/task.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>Manager</h1>
+      <button id="createTask">Add Task</button>
+      <button id="deleteTask">Delete Task</button>
+    </div>
+
+    <div class="main-content">
+      <div class="task-container" id="taskContainer"></div>
+    </div>
+    <dialog id="taskModal">
+      <form id="taskForm">
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" required />
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" required></textarea>
+        </div>
+        <div>
+          <label for="dueDate">Due Date:</label>
+          <input type="date" id="dueDate" required />
+        </div>
+        <div>
+          <label for="priority">Priority:</label>
+          <select id="priority" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <button type="submit">Add Task</button>
+        <button type="button" id="cancelForm">Cancel</button>
+      </form>
+    </dialog>
+    <script src="../scripts/task.js" defer></script>
+  </body>
+</html>

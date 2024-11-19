@@ -1,0 +1,75 @@
+body {
+margin: 0;
+padding: 0;
+display: flex;
+min-height: 100vh;
+}
+
+.sidebar {
+width: 200px;
+background-color: #f1f1f1;
+padding: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.sidebar h1 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.sidebar button {
+margin: 10px 0;
+padding: 10px;
+cursor: pointer;
+}
+
+.main-content {
+flex: 1;
+padding: 20px;
+background-color: #fff;
+}
+
+.task-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.task-card {
+border: 1px solid #ccc;
+padding: 15px;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+dialog {
+padding: 20px;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+
+#taskForm {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+#taskForm div {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+#taskForm input,
+#taskForm textarea,
+#taskForm select {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+#taskForm button {
+padding: 8px 16px;
+cursor: pointer;
+}
