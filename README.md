@@ -1,3 +1,3 @@
 # Odin Project
 
-Briefly practicing JS & React
+Briefly practicing JS 
